@@ -5,14 +5,13 @@ new Vue({
   // root element
   el: "#app",
   data: {
-    myValue: 10,
-  },
-  methods: {
-    add: function () {
-      this.myValue++;
-    },
-    subtract: function () {
-      this.myValue--;
-    },
+    names: ["mario", "luigi", "yoshi"],
+    persons: [
+      { name: "bowser", age: 43 },
+      {
+        name: "peach",
+        age: 25,
+      },
+    ],
   },
 });
