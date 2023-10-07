@@ -8,10 +8,7 @@ new Vue({
     names: ["mario", "luigi", "yoshi"],
     persons: [
       { name: "bowser", age: 43 },
-      {
-        name: "peach",
-        age: 25,
-      },
+      { name: "peach", age: 25 },
     ],
   },
 });
