@@ -3,12 +3,13 @@
 
 new Vue({
   // root element
-  el: "#app",
+  el: "#app-one",
   data: {
-    names: ["mario", "luigi", "yoshi"],
-    persons: [
-      { name: "bowser", age: 43 },
-      { name: "peach", age: 25 },
-    ],
+    name: "mario",
+  },
+  computed: {
+    setName() {
+      return `${this.name}`;
+    },
   },
 });
