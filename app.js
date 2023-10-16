@@ -1,15 +1,13 @@
-// vue isntance erstellen
-// 1 oder mehrere vue instances
-
-new Vue({
-  // root element
-  el: "#app-one",
+let vueOne = new Vue({
+  el: "#app",
   data: {
-    name: "mario",
-  },
-  computed: {
-    setName() {
-      return `${this.name}`;
-    },
+    username: "",
+    password: "",
+    currentUser: "",
+    feedback: "",
+    users: [
+      { name: "mario", password: "123" },
+      { name: "luigi", password: "abc" },
+    ],
   },
 });
