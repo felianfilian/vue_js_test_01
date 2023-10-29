@@ -12,7 +12,15 @@
   </head>
   <body>
     <div id="app">
-      <p>{{ 6 + 5 }}</p>
+      <p :class="{ green: isImportant}">Mario</p>
+      <p
+        v-bind:style="{ backgroundColor: isImportant ? 'green' : 'red' }"
+        style="color: white; padding: 8px 16px"
+        v-if="true"
+      >
+        {{ isImportant}}
+      </p>
+      <p v-else>CHAOS</p>
     </div>
     <script src="02_app.js"></script>
 
@@ -22,6 +30,9 @@
       }
       .blue {
         color: blue;
+      }
+      .green {
+        color: green;
       }
     </style>
   </body>
