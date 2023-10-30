@@ -12,15 +12,10 @@
   </head>
   <body>
     <div id="app">
-      <p :class="{ green: isImportant}">Mario</p>
-      <p
-        v-bind:style="{ backgroundColor: isImportant ? 'green' : 'red' }"
-        style="color: white; padding: 8px 16px"
-        v-if="true"
-      >
-        {{ isImportant}}
-      </p>
-      <p v-else>CHAOS</p>
+      <p v-if="stock > 1">Available</p>
+      <p v-else-if="stock == 1">Last piece</p>
+      <p v-else>sold out</p>
+      <p v-if="text.includes('mario')">Mario is here</p>
     </div>
     <script src="02_app.js"></script>
 

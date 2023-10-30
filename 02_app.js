@@ -1,9 +1,9 @@
 const app = Vue.createApp({
   data() {
     return {
-      message: "Super Metroid",
-      isImportant: true,
-      myClass: "red",
+      stock: 1,
+      text: "mario and luigi",
+      s,
     };
   },
 });
