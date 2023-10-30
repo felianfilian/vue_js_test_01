@@ -3,7 +3,6 @@ const app = Vue.createApp({
     return {
       stock: 1,
       text: "mario and luigi",
-      s,
     };
   },
 });
