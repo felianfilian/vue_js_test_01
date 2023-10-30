@@ -4,6 +4,7 @@ const app = Vue.createApp({
       stock: 1,
       text: "mario and luigi",
       showBro: true,
+      mossCount: 0,
       nameList: [
         { name: "Peach", age: 23 },
         {
