@@ -3,6 +3,14 @@ const app = Vue.createApp({
     return {
       stock: 1,
       text: "mario and luigi",
+      showBro: true,
+      nameList: [
+        { name: "Peach", age: 23 },
+        {
+          name: "Bowser",
+          age: 58,
+        },
+      ],
     };
   },
 });

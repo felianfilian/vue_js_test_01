@@ -14,6 +14,12 @@
     <div id="app">
       <p v-if="text.includes('mario')">Mario is here</p>
       <p v-else>Where is Mario</p>
+      <p v-show="showBro">Luigi</p>
+      <ul>
+        <li v-for="(person, index) in nameList">
+          {{ index + ': ' + person.name + ' ' + person.age}}
+        </li>
+      </ul>
     </div>
     <script src="02_app.js"></script>
 
