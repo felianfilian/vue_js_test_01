@@ -20,7 +20,10 @@
           {{ index + ': ' + person.name + ' ' + person.age}}
         </li>
       </ul>
-      <button>{{ 'Moss: ' + mossCount }}</button>
+      <button v-on:click="mossCount++">Count</button>
+      <p v-on:mouseover="changeColor()" :style="{'color': textColor} ">
+        {{ 'Count: ' + mossCount }}
+      </p>
     </div>
     <script src="02_app.js"></script>
 
