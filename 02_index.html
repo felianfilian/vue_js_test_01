@@ -11,21 +11,7 @@
     />
   </head>
   <body>
-    <div id="app">
-      <p v-if="text.includes('mario')">Mario is here</p>
-      <p v-else>Where is Mario</p>
-      <p v-show="showBro">Luigi</p>
-      <ul>
-        <li v-for="(person, index) in nameList">
-          {{ index + ': ' + person.name + ' ' + person.age}}
-        </li>
-      </ul>
-      <button v-on:click="mossCount++">Count</button>
-      <input type="text" v-on:input="mossCount++" />
-      <p v-on:mouseover="changeColor()" :style="{'color': textColor} ">
-        {{ 'Count: ' + mossCount }}
-      </p>
-    </div>
+    <div id="app"></div>
     <script src="02_app.js"></script>
 
     <style>
