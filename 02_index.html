@@ -21,6 +21,7 @@
         </li>
       </ul>
       <button v-on:click="mossCount++">Count</button>
+      <input type="text" v-on:input="mossCount++" />
       <p v-on:mouseover="changeColor()" :style="{'color': textColor} ">
         {{ 'Count: ' + mossCount }}
       </p>
