@@ -13,13 +13,14 @@
   <body>
     <div id="app">
       <button v-on:click="updateHealth(5)">Potion</button>
+      <input type="text" v-on:keyup.h="updateHealth(10)"></div>
       <p>{{ "Health: " + health }}</p>
     </div>
     <script src="02_app.js"></script>
 
     <style>
       .red {
-        color: red;
+        color: rgb(52, 52, 52);
       }
       .blue {
         color: blue;
