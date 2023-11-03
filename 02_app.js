@@ -1,7 +1,13 @@
 const app = Vue.createApp({
   data() {
-    return {};
+    return {
+      newText: "...",
+    };
   },
-  methods: {},
+  methods: {
+    writeText() {
+      this.newText = "Mario";
+    },
+  },
 });
 app.mount("#app");
