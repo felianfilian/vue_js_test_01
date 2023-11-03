@@ -12,7 +12,7 @@
   </head>
   <body>
     <div id="app">
-      <button v-on:click="writeText">Write</button>
+      <input type="text" v-on:input="updateText" />
       <p>{{ newText }}</p>
     </div>
     <script src="02_app.js"></script>

@@ -5,8 +5,8 @@ const app = Vue.createApp({
     };
   },
   methods: {
-    writeText() {
-      this.newText = "Mario";
+    updateText(event) {
+      this.newText = event.target.value;
     },
   },
 });
