@@ -12,9 +12,12 @@
   </head>
   <body>
     <div id="app">
-      <button v-on:click="updateHealth(5)">Potion</button>
-      <input type="text" @keyup.h="updateHealth(10)" />
-      <p>{{ "Health: " + health }}</p>
+      <form>
+        <p>Add item</p>
+        <p>Item name: <input type="text" required /></p>
+        <p>How many: <input type="number" /></p>
+        <button type="submit">Add item</button>
+      </form>
     </div>
     <script src="02_app.js"></script>
 

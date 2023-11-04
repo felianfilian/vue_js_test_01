@@ -1,15 +1,7 @@
 const app = Vue.createApp({
   data() {
-    return {
-      health: 0,
-    };
+    return {};
   },
-
-  methods: {
-    updateHealth(amount) {
-      this.health += amount;
-      console.log("pwr up");
-    },
-  },
+  methods: {},
 });
 app.mount("#app");
