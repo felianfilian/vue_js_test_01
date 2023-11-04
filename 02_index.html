@@ -13,7 +13,7 @@
   <body>
     <div id="app">
       <button v-on:click="updateHealth(5)">Potion</button>
-      <input type="text" v-on:keyup.h="updateHealth(10)"></div>
+      <input type="text" @keyup.h="updateHealth(10)" />
       <p>{{ "Health: " + health }}</p>
     </div>
     <script src="02_app.js"></script>

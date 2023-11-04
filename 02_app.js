@@ -8,6 +8,7 @@ const app = Vue.createApp({
   methods: {
     updateHealth(amount) {
       this.health += amount;
+      console.log("pwr up");
     },
   },
 });
