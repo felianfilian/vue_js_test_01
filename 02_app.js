@@ -1,6 +1,10 @@
 const app = Vue.createApp({
   data() {
-    return {};
+    return {
+      itemValue: null,
+      itemNumber: null,
+      shoppingList: [{ name: "milk", number: 5 }],
+    };
   },
   methods: {},
 });

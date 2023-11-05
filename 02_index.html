@@ -12,7 +12,7 @@
   </head>
   <body>
     <div id="app">
-      <form>
+      <form v-on:submit.prevent="addItem">
         <p>Add item</p>
         <p>Item name: <input type="text" required /></p>
         <p>How many: <input type="number" /></p>
