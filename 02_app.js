@@ -1,11 +1,21 @@
 const app = Vue.createApp({
   data() {
     return {
-      itemValue: null,
+      itemName: null,
       itemNumber: null,
       shoppingList: [{ name: "milk", number: 5 }],
     };
   },
-  methods: {},
+  methods: {
+    addItem() {
+      let item = {
+        name: this.itemName,
+        number: this.itemNumber,
+      };
+      this.shopppingList.push(item);
+      this.itemName = null;
+      this.itemNumber = null;
+    },
+  },
 });
 app.mount("#app");
