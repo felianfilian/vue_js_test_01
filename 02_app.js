@@ -12,7 +12,7 @@ const app = Vue.createApp({
         name: this.itemName,
         number: this.itemNumber,
       };
-      this.shopppingList.push(item);
+      this.shoppingList.push(item);
       this.itemName = null;
       this.itemNumber = null;
     },

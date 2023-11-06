@@ -14,10 +14,14 @@
     <div id="app">
       <form v-on:submit.prevent="addItem">
         <p>Add item</p>
-        <p>Item name: <input type="text" required /></p>
-        <p>How many: <input type="number" /></p>
+        <p>Item name: <input type="text" required v-model="itemName" /></p>
+        <p>How many: <input type="number" v-model="itemNumber" /></p>
         <button type="submit">Add item</button>
       </form>
+      <p>Shopping List:</p>
+      <ul>
+        <li v-for="item in shoppingList">{{ item.name }}: {{ item.number }}</li>
+      </ul>
     </div>
     <script src="02_app.js"></script>
 
