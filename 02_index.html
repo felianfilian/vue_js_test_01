@@ -16,11 +16,14 @@
         <p>Add item</p>
         <p>Item name: <input type="text" required v-model="itemName" /></p>
         <p>How many: <input type="number" v-model="itemNumber" /></p>
+        <p>Important: <input type="checkbox" v-model="inmportant" /></p>
         <button type="submit">Add item</button>
       </form>
       <p>Shopping List:</p>
       <ul>
-        <li v-for="item in shoppingList">{{ item.name }}: {{ item.number }}</li>
+        <li v-for="item in shoppingList">
+          {{ item.name }}: {{ item.number }} - {{ item.important }}
+        </li>
       </ul>
     </div>
     <script src="02_app.js"></script>
